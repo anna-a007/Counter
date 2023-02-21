@@ -38,10 +38,12 @@ class App extends Component {
   }
 
   reset = () => {
+    
     this.setState((state) => {
       return {
         ...state,
-        count: 0,
+        count: this.props.counter,
+        //count:0
       };
     });
   }
